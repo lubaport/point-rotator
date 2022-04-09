@@ -10,6 +10,7 @@ def read_file(file):
     x_ref = float(words[2])
     points = {}
     for i in range(2,len(lines)):
+        print(i)
         words = lines[i].split(",")
         points[words[0]] = {"y": float(words[1]), "x": float(words[2]), "z": float(words[3])}
     return rotation_angle, y_ref, x_ref, points
