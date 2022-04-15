@@ -10,7 +10,6 @@ def read_file(file):
     x_ref = float(words[2])
     points = {}
     for i in range(2,len(lines)):
-        print(i)
         words = lines[i].split(",")
         if len(words) > 3:
             points[words[0]] = {"y": float(words[1]), "x": float(words[2]), "z": float(words[3])}
